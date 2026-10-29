@@ -19,8 +19,8 @@ import sys
 import requests
 from sentence_transformers import SentenceTransformer
 
-SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
-SUPABASE_KEY = os.environ["SUPABASE_SERVICE_KEY"]
+SUPABASE_URL = os.environ["https://xmvnaxqolouvoqtczhhl.supabase.co"].rstrip("/")
+SUPABASE_KEY = os.environ["sb_publishable_nMcyZEtPJLGLJQMAKBKxtg_8GLkEj2H"]
 MODEL_NAME = os.getenv("MODEL_NAME", "intfloat/multilingual-e5-small")
 PREFIX = os.getenv("PREFIX", "query: ")
 CAMPI = [c.strip() for c in os.getenv("CAMPI_TESTO", "modello").split(",") if c.strip()]
